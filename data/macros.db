@@ -1,0 +1,564 @@
+{
+  "_id": "0SVoGm05o66biG2Q",
+  "name": "6.Reset Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"habA3uQuXwtFdOEr\");\ntile.update({hidden:false,locked:true});\n\ntile = canvas.tiles.get(\"Y6twkjRO0xZUy8XG\");\ntile.update({hidden:false,locked:true});",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/frozen.svg",
+  "actorIds": []
+}
+{
+  "_id": "1UZMDTqT2HeQZL0w",
+  "name": "6.Reset Elephant",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"zyMbbNYcRbMxfNWY\");\ntile.update({hidden:false});",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/cowled.svg",
+  "actorIds": []
+}
+{
+  "_id": "1Zo1qDtM0eUArV4b",
+  "name": "6.Animate Elephant",
+  "permission": {
+    "default": 0,
+    "yNgzYxeWiwvRCpcF": 3,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {
+    "core": {
+      "sourceId": "Macro.hs4guV2BNe47cEvj"
+    }
+  },
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"zyMbbNYcRbMxfNWY\");\ntile.update({hidden:true});\n\nconst data = {\n  file: \"worlds/syndei/animations/summoning%20elephant.webm\",\n  position: {\n    x: 3157,\n    y: 3829\n  },\n  anchor: {\n   x: 0,\n   y: 0\n  },\n  angle: 0,\n  scale: {\n    x: 1.2,\n    y: 1.2\n  }\n}\ncanvas.fxmaster.playVideo(data);\ngame.socket.emit('module.fxmaster', data);",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/target.svg",
+  "actorIds": []
+}
+{
+  "_id": "2kNdxjIXNktRtf3Q",
+  "name": "8.Reset Tombs",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"6Ork01PBmx2fillo\");\ntile.update({hidden:false});\n\n\ntile = canvas.tiles.get(\"0rHZrbe4sOYwDvjj\");\ntile.update({hidden:false});\n\ntile = canvas.tiles.get(\"gtXHJVQV8SeKWOTS\");\ntile.update({hidden:false});\n\ntile = canvas.tiles.get(\"v3gfbIE921oMRC4K\");\ntile.update({hidden:false});",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/cowled.svg",
+  "actorIds": []
+}
+{
+  "_id": "4HXByFy0JND72lgE",
+  "name": "4.Reset Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"QIYAoVfZya6PwEsG\");\ntile.update({hidden:false,locked:true});\n\ntile = canvas.tiles.get(\"4eH1iCgLufodARLT\");\ntile.update({hidden:false,locked:true});",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/frozen.svg",
+  "actorIds": []
+}
+{
+  "_id": "7TJGIvRlGFKHHcE2",
+  "name": "3.Reset Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"O1jJovHdhY04KlsB\");\ntile.update({hidden:false,locked:true});\n\ntile = canvas.tiles.get(\"Nsx4uh6R1eKZ77cR\");\ntile.update({hidden:false,locked:true});",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/frozen.svg",
+  "actorIds": []
+}
+{
+  "_id": "BJJIm2cXOYRjlS1f",
+  "name": "8.Reset Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"8KJZnAPOtDILWk4T\");\ntile.update({hidden:false,locked:true});\n\ntile = canvas.tiles.get(\"NC0zh3VHkpXK4KDU\");\ntile.update({hidden:false,locked:true});",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/frozen.svg",
+  "actorIds": []
+}
+{
+  "_id": "FBdUNmKRvJVRiHGZ",
+  "name": "Roll Fire Damage",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "const roll = new Roll(`4d10`);\nroll.roll();\nroll.toMessage({\n    flavor: \"Fire Damage\",\n});",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/fire.svg",
+  "actorIds": []
+}
+{
+  "_id": "I93eQ2WBshTIlGAl",
+  "name": "6.Clear Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"habA3uQuXwtFdOEr\");\ntile.update({hidden:true,locked:true});\n\ntile = canvas.tiles.get(\"Y6twkjRO0xZUy8XG\");\ntile.update({hidden:true,locked:true});\n\nTile.create({\n  img: \"worlds/syndei/stills/2R2RA.jpg\",\n  width: 350,\n  height: 350,\n  scale: 1,\n  x: 4119.1,\n  y: 3605.7,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n\nTile.create({\n  img: \"worlds/syndei/stills/2R1RA.jpg\",\n  width: 350,\n  height: 350,\n  scale: 1,\n  x: 4096,\n  y: 4118,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n\nTile.create({\n  img: \"worlds/syndei/stills/water%20well.png\",\n  width: 205,\n  height: 205,\n  scale: 1,\n  x: 3896.5,\n  y: 3916.5,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/sun.svg",
+  "actorIds": []
+}
+{
+  "_id": "ITkwjQvxDuMmyHdd",
+  "name": "7.Clear Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"yLxg4tMi8UeGZYyL\");\ntile.update({hidden:true,locked:true});\n\ntile = canvas.tiles.get(\"VuxRAoDJ57cISo8t\");\ntile.update({hidden:true,locked:true});\n\nTile.create({\n  img: \"worlds/syndei/stills/3L1UA.jpg\",\n  width: 342,\n  height: 396,\n  scale: 1,\n  x: 1289,\n  y: 2103.1,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n\nTile.create({\n  img: \"worlds/syndei/stills/water%20well.png\",\n  width: 210,\n  height: 210,\n  scale: 1,\n  x: 1342.3,\n  y: 2643.956043956044,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/sun.svg",
+  "actorIds": []
+}
+{
+  "_id": "KA9P8MvNEajpmXNr",
+  "name": "9.Clear Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"6jQx1xwPA7E8Dfrn\");\ntile.update({hidden:true,locked:true});\n\ntile = canvas.tiles.get(\"PNvDGkqaJJ5W8iqs\");\ntile.update({hidden:true,locked:true});\n\nTile.create({\n  img: \"worlds/syndei/stills/3R1RA.jpg\",\n  width: 304,\n  height: 417,\n  scale: 1,\n  x: 4170.5,\n  y: 2898,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n\nTile.create({\n  img: \"worlds/syndei/stills/water%20well.png\",\n  width: 210,\n  height: 210,\n  scale: 1,\n  x: 3925,\n  y: 2995,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/sun.svg",
+  "actorIds": []
+}
+{
+  "_id": "Kv9fxiofH5YsD9Ft",
+  "name": "Activate Rune E",
+  "permission": {
+    "default": 0,
+    "yNgzYxeWiwvRCpcF": 3,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "folder": null,
+  "sort": 200001,
+  "flags": {
+    "core": {
+      "sourceId": "Macro.hs4guV2BNe47cEvj"
+    }
+  },
+  "scope": "global",
+  "command": "const data = {\n  file: \"worlds/syndei/animations/rune%207.webm\",\n  position: {\n    x: 2747.5,\n    y: 6733.1\n  },\n  anchor: {\n   x: 0,\n   y: 0\n  },\n  angle: 0,\n  scale: {\n    x: 1,\n    y: 1\n  }\n}\ncanvas.fxmaster.playVideo(data);\ngame.socket.emit('module.fxmaster', data);\n\nsetTimeout(() => {\nTile.create({\n  img: \"worlds/syndei/stills/frame_00015.png\",\n  width: 100,\n  height: 100,\n  scale: 1,\n  x: 2747.5,\n  y: 6733.1,\n  z: 2,\n  rotation: 0,\n  hidden: false,\n  locked: false\n});\n}, 1980)",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "worlds/syndei/stills/frame_00015.png",
+  "actorIds": []
+}
+{
+  "name": "New Macro",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "chat",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/dice-target.svg",
+  "actorIds": [],
+  "_id": "OzOlIxw5shVjpWbh"
+}
+{
+  "_id": "P3woGD47M8t5YG0n",
+  "name": "Activate Rune Y",
+  "permission": {
+    "default": 0,
+    "yNgzYxeWiwvRCpcF": 3,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "folder": null,
+  "sort": 200001,
+  "flags": {
+    "core": {
+      "sourceId": "Macro.hs4guV2BNe47cEvj"
+    }
+  },
+  "scope": "global",
+  "command": "const data = {\n  file: \"worlds/syndei/animations/rune%205.webm\",\n  position: {\n    x: 2948,\n    y: 6733.5\n  },\n  anchor: {\n   x: 0,\n   y: 0\n  },\n  angle: 0,\n  scale: {\n    x: 1,\n    y: 1\n  }\n}\ncanvas.fxmaster.playVideo(data);\ngame.socket.emit('module.fxmaster', data);\n\nsetTimeout(() => {\nTile.create({\n  img: \"worlds/syndei/stills/frame_00017.png\",\n  width: 100,\n  height: 100,\n  scale: 1,\n  x: 2948,\n  y: 6733.5,\n  z: 2,\n  rotation: 0,\n  hidden: false,\n  locked: false\n});\n}, 1980)",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "worlds/syndei/stills/frame_00017.png",
+  "actorIds": []
+}
+{
+  "_id": "Q1Wt7Wiha8R1QUOK",
+  "name": "8.Clear Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"8KJZnAPOtDILWk4T\");\ntile.update({hidden:true,locked:true});\n\ntile = canvas.tiles.get(\"NC0zh3VHkpXK4KDU\");\ntile.update({hidden:true,locked:true});\n\nTile.create({\n  img: \"worlds/syndei/stills/3M1UA.jpg\",\n  width: 325,\n  height: 325,\n  scale: 1,\n  x: 2290.1,\n  y: 3566.3,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n\nTile.create({\n  img: \"worlds/syndei/stills/water%20well.png\",\n  width: 210,\n  height: 210,\n  scale: 1,\n  x: 2695.6,\n  y: 3497.8,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/sun.svg",
+  "actorIds": []
+}
+{
+  "_id": "Rv0HApH3jagjbQYk",
+  "name": "3.Clear Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"O1jJovHdhY04KlsB\");\ntile.update({hidden:true,locked:true});\n\ntile = canvas.tiles.get(\"Nsx4uh6R1eKZ77cR\");\ntile.update({hidden:true,locked:true});\n\nTile.create({\n  img: \"worlds/syndei/stills/1L1LA.jpg\",\n  width: 291,\n  height: 333,\n  scale: 1,\n  x: 1309.4,\n  y: 3948.7,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n\nTile.create({\n  img: \"worlds/syndei/stills/1L1RA.jpg\",\n  width: 244,\n  height: 355,\n  scale: 1,\n  x: 2102,\n  y: 3890,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n\nTile.create({\n  img: \"worlds/syndei/stills/water%20well.png\",\n  width: 205,\n  height: 205,\n  scale: 1,\n  x: 1745.5,\n  y: 3999,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/sun.svg",
+  "actorIds": []
+}
+{
+  "_id": "U0uBOa7P0vNo282x",
+  "name": "9.Reset Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"6jQx1xwPA7E8Dfrn\");\ntile.update({hidden:false,locked:true});\n\ntile = canvas.tiles.get(\"PNvDGkqaJJ5W8iqs\");\ntile.update({hidden:false,locked:true});",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/frozen.svg",
+  "actorIds": []
+}
+{
+  "name": "New Macro",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "chat",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/dice-target.svg",
+  "actorIds": [],
+  "_id": "X0zOEnjOCEscLVBu"
+}
+{
+  "_id": "XTe8RXqwcDWhh1On",
+  "name": "4.Reset Tombs",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"hhlph6HLjCQm2gx5\");\ntile.update({hidden:false});\n\n\ntile = canvas.tiles.get(\"EWQzaU1E7cmVKQhq\");\ntile.update({hidden:false});\n\ntile = canvas.tiles.get(\"GY9TGz5nO9hMxXQY\");\ntile.update({hidden:false});\n\ntile = canvas.tiles.get(\"gTfTuu6kK2UT0wYt\");\ntile.update({hidden:false});",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/cowled.svg",
+  "actorIds": []
+}
+{
+  "_id": "ZoUj2qLsXVrr0SuL",
+  "name": "4.Open Tombs",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"hhlph6HLjCQm2gx5\");\ntile.update({hidden:true,locked:true});\n\nconst data = {\n  file: \"worlds/syndei/animations/coffin%20bottom%201.webm\",\n  position: {\n    x: 3002.3,\n    y: 5097.7,\n    z: 5\n  },\n  anchor: {\n   x: 0,\n   y: 0\n  },\n  angle: 0,\n  scale: {\n    x: 1,\n    y: 1\n  }\n}\ncanvas.fxmaster.playVideo(data);\ngame.socket.emit('module.fxmaster', data);\n\nsetTimeout(() => {\nTile.create({\n  img: \"worlds/syndei/stills/frame_00024.png\",\n  width: 200,\n  height: 200,\n  scale: 1,\n  x: 3002.3,\n  y: 5097.7,\n  z: 4,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n}, 1000);\n\nsetTimeout(triggerCoffin2, 700);\nfunction triggerCoffin2 () {\n   let tile = canvas.tiles.get(\"EWQzaU1E7cmVKQhq\");\n   tile.update({hidden:true,locked:true});\n\n   const data = {\n     file: \"worlds/syndei/animations/coffin%20bottom%201.webm\",\n     position: {\n       x: 3001.25,\n       y: 4513.75,\n       z: 5\n     },\n     anchor: {\n      x: 0,\n      y: 0\n     },\n     angle: 0,\n     scale: {\n       x: 1,\n       y: 1\n     }\n   }\n   canvas.fxmaster.playVideo(data);\n   game.socket.emit('module.fxmaster', data);\n\n   setTimeout(() => {\n   Tile.create({\n     img: \"worlds/syndei/stills/frame_00024.png\",\n     width: 200,\n     height: 200,\n     scale: 1,\n     x: 3001.25,\n     y: 4513.75,\n     z: 4,\n     rotation: 0,\n     hidden: false,\n     locked: false\n   })\n   }, 1000);\n\n};\n\nsetTimeout(triggerCoffin, 500);\nfunction triggerCoffin () {\n   let tile = canvas.tiles.get(\"GY9TGz5nO9hMxXQY\");\n   tile.update({hidden:true,locked:true});\n\n   const data = {\n     file: \"worlds/syndei/animations/coffin%20bottom%201.webm\",\n     position: {\n       x: 2393.7,\n       y: 4517.8,\n       z: 5\n     },\n     anchor: {\n      x: 1,\n      y: 1\n     },\n     angle: 180,\n     scale: {\n       x: 1,\n       y: 1\n     },\n     rotation: 0\n   }\n   canvas.fxmaster.playVideo(data);\n   game.socket.emit('module.fxmaster', data);\n\n   setTimeout(() => {\n   Tile.create({\n     img: \"worlds/syndei/stills/frame_00024.png\",\n     width: 200,\n     height: 200,\n     scale: 1,\n     x: 2393.7,\n     y: 4517.8,\n     z: 4,\n     rotation: 180,\n     hidden: false,\n     locked: false\n   })\n   }, 1000);\n\n};\n\nsetTimeout(triggerCoffin3, 1000);\nfunction triggerCoffin3 () {\n   let tile = canvas.tiles.get(\"gTfTuu6kK2UT0wYt\");\n   tile.update({hidden:true,locked:true});\n\n   const data = {\n     file: \"worlds/syndei/animations/coffin%20bottom%201.webm\",\n     position: {\n       x: 2393.1,\n       y: 5081.6,\n       z: 5\n     },\n     anchor: {\n      x: 1,\n      y: 1\n     },\n     angle: 180,\n     scale: {\n       x: 1,\n       y: 1\n     },\n     rotation: 0\n   }\n   canvas.fxmaster.playVideo(data);\n   game.socket.emit('module.fxmaster', data);\n\n   setTimeout(() => {\n   Tile.create({\n     img: \"worlds/syndei/stills/frame_00024.png\",\n     width: 200,\n     height: 200,\n     scale: 1,\n     x: 2393.1,\n     y: 5081.6,\n     z: 4,\n     rotation: 180,\n     hidden: false,\n     locked: false\n   })\n   }, 1000);\n\n}",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/bones.svg",
+  "actorIds": []
+}
+{
+  "_id": "c9urvo3Gy4CUENGu",
+  "name": "Activate Rune D",
+  "permission": {
+    "default": 0,
+    "yNgzYxeWiwvRCpcF": 3,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "folder": null,
+  "sort": 200001,
+  "flags": {
+    "core": {
+      "sourceId": "Macro.hs4guV2BNe47cEvj"
+    }
+  },
+  "scope": "global",
+  "command": "const data = {\n  file: \"worlds/syndei/animations/rune%201.webm\",\n  position: {\n    x: 2549.5,\n    y: 6567,\n    z: 3\n  },\n  anchor: {\n   x: 0,\n   y: 0\n  },\n  angle: 0,\n  scale: {\n    x: 1,\n    y: 1\n  }\n}\ncanvas.fxmaster.playVideo(data);\ngame.socket.emit('module.fxmaster', data);\n\n\nsetTimeout(() => {\nTile.create({\n  img: \"worlds/syndei/stills/frame_00019.png\",\n  width: 100,\n  height: 100,\n  scale: 1,\n  x: 2549.5,\n  y: 6567,\n  z: 2,\n  rotation: 0,\n  hidden: false,\n  locked: false\n});\n}, 1980)",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "worlds/syndei/stills/frame_00019.png",
+  "actorIds": []
+}
+{
+  "_id": "dM1fHjXmq9ANJDB2",
+  "name": "Play Fireblast",
+  "permission": {
+    "default": 0,
+    "yNgzYxeWiwvRCpcF": 3,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {
+    "core": {
+      "sourceId": "Macro.hs4guV2BNe47cEvj"
+    }
+  },
+  "scope": "global",
+  "command": "const data = {\n  file: \"worlds/syndei/animations/fire%20blast%201.webm\",\n  position: {\n    x: 2420.2,\n    y: 6479.8\n  },\n  anchor: {\n   x: 0,\n   y: 0\n  },\n  angle: 0,\n  scale: {\n    x: 1,\n    y: 1\n  }\n}\ncanvas.fxmaster.playVideo(data);\ngame.socket.emit('module.fxmaster', data);",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/trap.svg",
+  "actorIds": []
+}
+{
+  "_id": "enKgqHqmjvoi8NMu",
+  "name": "8.Open Tombs",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"6Ork01PBmx2fillo\");\ntile.update({hidden:true,locked:true});\n\nconst data = {\n  file: \"worlds/syndei/animations/coffin%20bottom%201.webm\",\n  position: {\n    x: 3007,\n    y: 3288,\n    z: 5\n  },\n  anchor: {\n   x: 0,\n   y: 0\n  },\n  angle: 0,\n  scale: {\n    x: 1,\n    y: 1\n  }\n}\ncanvas.fxmaster.playVideo(data);\ngame.socket.emit('module.fxmaster', data);\n\nsetTimeout(() => {\nTile.create({\n  img: \"worlds/syndei/stills/frame_00024.png\",\n  width: 200,\n  height: 200,\n  scale: 1,\n  x: 3007,\n  y: 3288,\n  z: 4,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n}, 1000);\n\nsetTimeout(triggerCoffin2, 700);\nfunction triggerCoffin2 () {\n   let tile = canvas.tiles.get(\"0rHZrbe4sOYwDvjj\");\n   tile.update({hidden:true,locked:true});\n\n   const data = {\n     file: \"worlds/syndei/animations/coffin%20bottom%201.webm\",\n     position: {\n       x: 3008,\n       y: 2712,\n       z: 5\n     },\n     anchor: {\n      x: 0,\n      y: 0\n     },\n     angle: 0,\n     scale: {\n       x: 1,\n       y: 1\n     }\n   }\n   canvas.fxmaster.playVideo(data);\n   game.socket.emit('module.fxmaster', data);\n\n   setTimeout(() => {\n   Tile.create({\n     img: \"worlds/syndei/stills/frame_00024.png\",\n     width: 200,\n     height: 200,\n     scale: 1,\n     x: 3008,\n     y: 2712,\n     z: 4,\n     rotation: 0,\n     hidden: false,\n     locked: false\n   })\n   }, 1000);\n\n};\n\nsetTimeout(triggerCoffin, 500);\nfunction triggerCoffin () {\n   let tile = canvas.tiles.get(\"gtXHJVQV8SeKWOTS\");\n   tile.update({hidden:true,locked:true});\n\n   const data = {\n     file: \"worlds/syndei/animations/coffin%20bottom%201.webm\",\n     position: {\n       x: 2398,\n       y: 2713.5,\n       z: 5\n     },\n     anchor: {\n      x: 1,\n      y: 1\n     },\n     angle: 180,\n     scale: {\n       x: 1,\n       y: 1\n     },\n     rotation: 0\n   }\n   canvas.fxmaster.playVideo(data);\n   game.socket.emit('module.fxmaster', data);\n\n   setTimeout(() => {\n   Tile.create({\n     img: \"worlds/syndei/stills/frame_00024.png\",\n     width: 200,\n     height: 200,\n     scale: 1,\n     x: 2398,\n     y: 2713.5,\n     z: 4,\n     rotation: 180,\n     hidden: false,\n     locked: false\n   })\n   }, 1000);\n\n};\n\nsetTimeout(triggerCoffin3, 1000);\nfunction triggerCoffin3 () {\n   let tile = canvas.tiles.get(\"v3gfbIE921oMRC4K\");\n   tile.update({hidden:true,locked:true});\n\n   const data = {\n     file: \"worlds/syndei/animations/coffin%20bottom%201.webm\",\n     position: {\n       x: 2397.5,\n       y: 3287.5,\n       z: 5\n     },\n     anchor: {\n      x: 1,\n      y: 1\n     },\n     angle: 180,\n     scale: {\n       x: 1,\n       y: 1\n     },\n     rotation: 0\n   }\n   canvas.fxmaster.playVideo(data);\n   game.socket.emit('module.fxmaster', data);\n\n   setTimeout(() => {\n   Tile.create({\n     img: \"worlds/syndei/stills/frame_00024.png\",\n     width: 200,\n     height: 200,\n     scale: 1,\n     x: 2397.5,\n     y: 3287.5,\n     z: 4,\n     rotation: 180,\n     hidden: false,\n     locked: false\n   })\n   }, 1000);\n\n}",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/bones.svg",
+  "actorIds": []
+}
+{
+  "_id": "eq0nZZB2CEIWNaPq",
+  "name": "5.Clear Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"gJljjF6HCNJWKbgY\");\ntile.update({hidden:true,locked:true});\n\ntile = canvas.tiles.get(\"LRNMoCAIGsx3l2t7\");\ntile.update({hidden:true,locked:true});\n\nTile.create({\n  img: \"worlds/syndei/stills/1R1RA.jpg\",\n  width: 259,\n  height: 366,\n  scale: 1,\n  x: 4181.9,\n  y: 4744,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n\nTile.create({\n  img: \"worlds/syndei/stills/water%20well.png\",\n  width: 210,\n  height: 210,\n  scale: 1,\n  x: 3922.5,\n  y: 4792.5,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/sun.svg",
+  "actorIds": []
+}
+{
+  "_id": "gEiTgCOiD8ew0ekH",
+  "name": "3.Paper Whirlwind",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "Tile.create({\n  img: \"worlds/syndei/animations/paper%20whirlwind.webm\",\n  width: 275,\n  height: 275,\n  scale: 1,\n  x: 1855,\n  y: 4880,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n\nTile.create({\n  img: \"worlds/syndei/animations/paper%20whirlwind.webm\",\n  width: 275,\n  height: 275,\n  scale: 1,\n  x: 1576.1,\n  y: 4668.2,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n\nTile.create({\n  img: \"worlds/syndei/animations/paper%20whirlwind.webm\",\n  width: 275,\n  height: 275,\n  scale: 1,\n  x: 1849,\n  y: 4358,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/daze.svg",
+  "actorIds": []
+}
+{
+  "_id": "gIRCHYP5r67HX2De",
+  "name": "4.Clear Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"QIYAoVfZya6PwEsG\");\ntile.update({hidden:true,locked:true});\n\ntile = canvas.tiles.get(\"4eH1iCgLufodARLT\");\ntile.update({hidden:true,locked:true});\n\nTile.create({\n  img: \"worlds/syndei/stills/1M1LA.jpg\",\n  width: 335,\n  height: 335,\n  scale: 1,\n  x: 2300,\n  y: 4091.1,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n\nTile.create({\n  img: \"worlds/syndei/stills/water%20well.png\",\n  width: 210,\n  height: 210,\n  scale: 1,\n  x: 2690.5,\n  y: 4298.5,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})\n\nTile.create({\n  img: \"worlds/syndei/stills/1M1UA.jpg\",\n  width: 402,\n  height: 242,\n  scale: 1,\n  x: 2597.7,\n  y: 5495.4,\n  z: 1,\n  rotation: 0,\n  hidden: false,\n  locked: false\n})",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/sun.svg",
+  "actorIds": []
+}
+{
+  "_id": "i1Wgonoz0LfmPUGc",
+  "name": "5.Reset Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"gJljjF6HCNJWKbgY\");\ntile.update({hidden:false,locked:true});\n\ntile = canvas.tiles.get(\"LRNMoCAIGsx3l2t7\");\ntile.update({hidden:false,locked:true});",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/frozen.svg",
+  "actorIds": []
+}
+{
+  "_id": "iKgaXcEdV3ojqyU3",
+  "name": "Activate Rune S",
+  "permission": {
+    "default": 0,
+    "yNgzYxeWiwvRCpcF": 3,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "folder": null,
+  "sort": 200001,
+  "flags": {
+    "core": {
+      "sourceId": "Macro.hs4guV2BNe47cEvj"
+    }
+  },
+  "scope": "global",
+  "command": "const data = {\n  file: \"worlds/syndei/animations/rune%204.webm\",\n  position: {\n    x: 2945.8,\n    y: 6565.3\n  },\n  anchor: {\n   x: 0,\n   y: 0\n  },\n  angle: 0,\n  scale: {\n    x: 1,\n    y: 1\n  }\n}\ncanvas.fxmaster.playVideo(data);\ngame.socket.emit('module.fxmaster', data);\n\nsetTimeout(() => {\nTile.create({\n  img: \"worlds/syndei/stills/frame_00018.png\",\n  width: 100,\n  height: 100,\n  scale: 1,\n  x: 2945.8,\n  y: 6565.3,\n  z: 2,\n  rotation: 0,\n  hidden: false,\n  locked: false\n});\n}, 1980)",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "worlds/syndei/stills/frame_00018.png",
+  "actorIds": []
+}
+{
+  "name": "Play Video",
+  "permission": {
+    "default": 0,
+    "yNgzYxeWiwvRCpcF": 3,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "folder": null,
+  "sort": 100001,
+  "flags": {
+    "core": {
+      "sourceId": "Macro.hs4guV2BNe47cEvj"
+    }
+  },
+  "scope": "global",
+  "command": "const data = {\n  file: \"modules/fxmaster/specials/fxmaster/smokeBomb.webm\",\n  position: {\n    x: 1000,\n    y: 1000\n  },\n  anchor: {\n   x: 0.5,\n   y: 0.5\n  },\n  angle: 0,\n  scale: {\n    x: 2.5,\n    y: 10\n  }\n}\ncanvas.fxmaster.playVideo(data);\ngame.socket.emit('fxmaster', data);",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/video.svg",
+  "actorIds": [],
+  "_id": "kPyVpdq9xlVz2WYg"
+}
+{
+  "_id": "ondgK9OFClKVJyKN",
+  "name": "Activate Rune N",
+  "permission": {
+    "default": 0,
+    "yNgzYxeWiwvRCpcF": 3,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "folder": null,
+  "sort": 200001,
+  "flags": {
+    "core": {
+      "sourceId": "Macro.hs4guV2BNe47cEvj"
+    }
+  },
+  "scope": "global",
+  "command": "const data = {\n  file: \"worlds/syndei/animations/rune%202.webm\",\n  position: {\n    x: 2549.5,\n    y: 6733\n  },\n  anchor: {\n   x: 0,\n   y: 0\n  },\n  angle: 0,\n  scale: {\n    x: 1,\n    y: 1\n  }\n}\ncanvas.fxmaster.playVideo(data);\ngame.socket.emit('module.fxmaster', data);\n\nsetTimeout(() => {\nTile.create({\n  img: \"worlds/syndei/stills/frame_00014.png\",\n  width: 100,\n  height: 100,\n  scale: 1,\n  x: 2549.5,\n  y: 6733,\n  z: 2,\n  rotation: 0,\n  hidden: false,\n  locked: false\n});\n}, 1980)",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "worlds/syndei/stills/frame_00014.png",
+  "actorIds": []
+}
+{
+  "_id": "sNGGgzHmmfCGP7JO",
+  "name": "Activate Rune I",
+  "permission": {
+    "default": 0,
+    "yNgzYxeWiwvRCpcF": 3,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "folder": null,
+  "sort": 200001,
+  "flags": {
+    "core": {
+      "sourceId": "Macro.hs4guV2BNe47cEvj"
+    }
+  },
+  "scope": "global",
+  "command": "const data = {\n  file: \"worlds/syndei/animations/rune%206.webm\",\n  position: {\n    x: 2748.3,\n    y: 6566.1\n  },\n  anchor: {\n   x: 0,\n   y: 0\n  },\n  angle: 0,\n  scale: {\n    x: 1,\n    y: 1\n  }\n}\ncanvas.fxmaster.playVideo(data);\ngame.socket.emit('module.fxmaster', data);\n\nsetTimeout(() => {\nTile.create({\n  img: \"worlds/syndei/stills/frame_00016.png\",\n  width: 100,\n  height: 100,\n  scale: 1,\n  x: 2748.3,\n  y: 6566.1,\n  z: 2,\n  rotation: 0,\n  hidden: false,\n  locked: false\n});\n}, 1980)",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "worlds/syndei/stills/frame_00016.png",
+  "actorIds": []
+}
+{
+  "_id": "vnBFNXxfCXzJyEUO",
+  "name": "7.Reset Room",
+  "permission": {
+    "default": 0,
+    "pkvmmySH7KviFe4s": 3
+  },
+  "type": "script",
+  "sort": 100001,
+  "flags": {},
+  "scope": "global",
+  "command": "let tile = canvas.tiles.get(\"yLxg4tMi8UeGZYyL\");\ntile.update({hidden:false,locked:true});\n\ntile = canvas.tiles.get(\"VuxRAoDJ57cISo8t\");\ntile.update({hidden:false,locked:true});",
+  "author": "pkvmmySH7KviFe4s",
+  "img": "icons/svg/frozen.svg",
+  "actorIds": []
+}
